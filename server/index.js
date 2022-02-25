@@ -8,7 +8,7 @@ const { urlencoded } = require('body-parser');
 const db = mysql.createPool({
     host: '127.0.0.1',
     user: 'root',
-    password: '1234',
+    password: '###',
     database: 'inkb',
 });
 
