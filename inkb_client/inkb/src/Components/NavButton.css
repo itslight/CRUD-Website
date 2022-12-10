@@ -1,0 +1,21 @@
+.NavBtn{
+    margin-left: auto;
+    cursor: pointer;
+}
+.bar{
+    display: flex; 
+    flex-direction: column;
+    height: 2.4px;
+    width: 2.5rem;
+    background-color: black;
+    opacity: 0.6;
+}
+.bar + .bar{
+    margin-top: 5px;
+}
+@media only screen and (min-width: 901px) {
+
+    .NavBtn{
+        display: none;
+    }
+  }

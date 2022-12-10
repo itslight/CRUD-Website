@@ -1,0 +1,38 @@
+.AccContainer{
+    font-size: 1.4rem;
+    display: flex;
+    width: 40rem;
+    height: 25rem;
+    margin-left: auto;
+    background-color: white;
+    /* z-index: 2; */
+}
+.acc-element{
+    margin-top: auto;
+}
+.acc-element-left{
+    padding: 1.3rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+}
+.acc-element-right{
+    margin-left: auto;
+    padding: 1rem;
+    
+}
+.acc-element-right button{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 1.5rem 3rem;
+    border: none;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    /* opacity: 0.7; */
+    position: fixed;
+    top: 0;
+}

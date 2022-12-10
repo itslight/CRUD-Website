@@ -1,0 +1,55 @@
+.Home{
+    /* display: flex;
+    flex-direction: column; */
+}
+.Popular-Cards{
+    
+}
+.Cards-Heading{
+    font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.cards__item{
+    background-color: white;
+    display: inherit;
+    margin-top:1rem;
+    margin-left:2rem;
+    flex-flow: column;
+    width: 97vw;
+    height: 370px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    overflow: hidden;
+    text-decoration: none;
+}
+.slick-arrow{
+    color: black!important;
+    height: 10rem;
+}
+.slick-prev{
+    z-index: 100;
+    left: 2rem !important;
+    color: rgb(19, 3, 3)!important;
+    height: 10rem!important;
+    width: 5rem !important;
+    background-color: white!important;
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017))!important;
+    opacity: 0.7;
+}
+.slick-next{
+    z-index: 100;
+    right: 20px !important;
+    height: 100px !important;
+    width:50px !important;
+    background-color: white!important;
+    background-color: black;
+    opacity: 0.7;
+}
+.slick-prev:before, .slick-next:before {
+    color: black!important;
+}

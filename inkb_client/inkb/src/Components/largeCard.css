@@ -1,0 +1,9 @@
+.large-card-container{
+    /* height: 10rem; */
+    margin-top: 5rem;
+}
+
+.large-c-img-c img{
+    height: 25rem;
+    width: 25rem;
+}

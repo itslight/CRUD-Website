@@ -1,0 +1,105 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+.Header-Wrapper{
+    display: flex;
+    margin: 10px;
+    padding: 18px;
+    left: 0;
+    right: 0;
+    /* background-color: rgb(238, 243, 210) ; */
+    opacity: 0.7;
+    position: fixed;
+    /* max-width: 100%; */
+}
+.Shop-Name{
+    font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+    letter-spacing: 0.4em;
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.Shop-Name::after{
+   display: inherit;
+   content: "";
+   /* position: absolute; */
+   height: 1.5px;
+   left: 0;
+   margin-top: -17px;
+   margin-left: -15px;
+   width: 130px;
+   background-color: currentColor;
+   transform-origin: left;
+   transform: scaleX(0);
+   transition: transform .7s cubic-bezier(.19, 1, .22, 1) .2s;
+}
+.Shop-Name:hover::after{
+    transform: scaleX(1);
+    transform-origin: right; 
+}
+/* .Behind-Header{
+    background-color: rgb(219, 253, 219) ;
+    height: 1000px;
+} */
+.Header-items{
+    font: 400 14px/1.6 Graphik,sans-serif;
+    margin-right: 1.8rem;
+    cursor: pointer;
+}
+.Header-items-list-left{
+    display: inherit;
+}
+.Header-items-list-right{
+    display: inherit;
+    margin-left: auto;
+    width:auto;
+}
+.Header-items-list{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.8rem;
+    margin-top: 0.4rem;                                     
+    color: #000;
+    opacity: 0.85;
+    width: 100%;
+}
+a{
+    text-decoration: none;  
+    color: inherit;
+}
+.Header-items::after{
+   content: "";
+   display: block;
+   left: 0;
+   right: 0;
+   height: 1.5px;
+   width: 100%;
+   background-color: currentColor;
+   opacity: 0.4;
+   transform: scaleX(0);
+   transform-origin: left;
+   transition: transform .7s cubic-bezier(.19, 1, .22, 1) .2s;
+}
+.Header-items:hover::after{
+    transform: scaleX(1);
+    transform-origin: right;
+}
+@media only screen and (max-width: 900px) {
+
+    .Header-items-list{
+        display: none;
+    }
+    .Header-Wrapper{
+        justify-content: center;
+        padding: 25px;
+    }
+    .Shop-Name{
+        margin-top: -10px;
+    }
+  }

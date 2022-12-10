@@ -1,0 +1,12 @@
+.Banner-Wrapper{
+    height: 40%;
+}
+.Banner-Image-Wrapper{
+    height: inherit;
+}
+.Banner-Image{
+    width: 100%;
+    height: 70vh;
+    min-width: 80rem;
+    
+}

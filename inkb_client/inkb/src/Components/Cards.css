@@ -1,0 +1,64 @@
+.Card{
+    /* display: flex; */
+    width: 20rem;
+    /* position: relative; */
+    height: 25rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+.Card-Image{
+    max-height: 100%;
+    max-width: inherit;
+    
+}
+.Card-Text{
+    display: flex;
+    position: absolute;
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: underline;
+    opacity: 0;
+    height: inherit;
+    width: inherit;
+    transition: opacity 0.5s;
+}
+.Card-Text:hover{
+    opacity: 1;
+}
+.Card-Desc{
+    position: inherit;
+    color: inherit;
+    margin-left: inherit;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 22rem;
+    cursor: pointer;
+}
+.Card-Offer{
+    position: inherit;
+    color: inherit;
+    margin-left: inherit;
+    text-decoration: inherit;
+    font-size: 4rem;
+    margin-top: 5rem;
+    cursor: pointer; 
+}
+.Overlay-On-Image{
+    /* display: flex; */
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    height: inherit;
+    width: inherit;
+    z-index: 100;
+    transition: opacity 0.5s;
+    /* margin-top: inherit; */
+    /* margin-left: inherit; */
+}
+.Overlay-On-Image:hover{
+    opacity: 0.5;
+}
+.cards__item{
+    filter: none;
+}
